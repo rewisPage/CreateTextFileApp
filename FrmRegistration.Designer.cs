@@ -48,6 +48,7 @@
             label9 = new Label();
             label10 = new Label();
             btnRegister = new Button();
+            btnRecords = new Button();
             SuspendLayout();
             // 
             // label1
@@ -57,9 +58,9 @@
             label1.Location = new Point(19, 19);
             label1.Margin = new Padding(10);
             label1.Name = "label1";
-            label1.Size = new Size(145, 32);
+            label1.Size = new Size(338, 32);
             label1.TabIndex = 0;
-            label1.Text = "Registration";
+            label1.Text = "📃 Student Registration Form";
             // 
             // label2
             // 
@@ -251,20 +252,33 @@
             // btnRegister
             // 
             btnRegister.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRegister.Location = new Point(587, 267);
+            btnRegister.Location = new Point(325, 281);
             btnRegister.Margin = new Padding(10);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(162, 53);
+            btnRegister.Size = new Size(124, 39);
             btnRegister.TabIndex = 19;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
             btnRegister.Click += btnRegister_Click;
+            // 
+            // btnRecords
+            // 
+            btnRecords.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRecords.Location = new Point(625, 281);
+            btnRecords.Margin = new Padding(10);
+            btnRecords.Name = "btnRecords";
+            btnRecords.Size = new Size(124, 39);
+            btnRecords.TabIndex = 20;
+            btnRecords.Text = "Records";
+            btnRecords.UseVisualStyleBackColor = true;
+            btnRecords.Click += btnRecords_Click;
             // 
             // FrmRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(774, 339);
+            Controls.Add(btnRecords);
             Controls.Add(btnRegister);
             Controls.Add(label10);
             Controls.Add(txtContactNo);
@@ -314,5 +328,6 @@
         private Label label9;
         private Label label10;
         private Button btnRegister;
+        private Button btnRecords;
     }
 }

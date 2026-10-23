@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Windows.Forms;
-
-namespace CreateTextFileApp
+﻿namespace CreateTextFileApp
 {
     public partial class FrmRegistration : Form
     {
@@ -190,6 +186,16 @@ namespace CreateTextFileApp
             dtpBirthday.Value = DateTime.Now;
 
             txtStudentNo.Focus();
+        }
+
+        private void btnRecords_Click(object sender, EventArgs e)
+        {
+            FrmStudentRecord frmStudentRecord = new FrmStudentRecord();
+
+            frmStudentRecord.Show();
+
+            this.Hide();
+
         }
     }
 }
